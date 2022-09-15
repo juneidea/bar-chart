@@ -1,3 +1,4 @@
+![bar-chart](https://user-images.githubusercontent.com/26939664/190519501-707b8384-42a7-4031-89a3-5872b868168a.png)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
