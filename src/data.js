@@ -39,11 +39,13 @@ const data = [
 const scale = {
     age: {
         start: '0',
-        end: '100'
+        end: '100',
+        ratio: 1
     },
     salary: {
         start: '0',
-        end: '150,000'
+        end: '150,000',
+        ratio: (1/1000)/1.5
     }
 }
    
