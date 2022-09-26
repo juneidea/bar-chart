@@ -16,7 +16,10 @@ function App() {
       </select>
       <div className="Graph">
         <div className="Graph-title">{selected}</div>
-        <div className="Graph-scale"><span className="Graph-start">{scale[selected].start}</span><span className="Graph-end">{scale[selected].end}</span></div>
+        <div className="Graph-scale">
+          <span className="Graph-start">{scale[selected].start}</span>
+          <span className="Graph-end">{(scale[selected].max).toLocaleString()}</span>
+        </div>
       </div>
         <Graph selected={selected} />
       </header>

@@ -8,6 +8,14 @@ function Graph({selected}) {
     const ratio = scale[selected].ratio
     return (
       <div className="Graph">
+        <div className="Graph-border">
+          <span className="Graph-name"></span>
+          <div className="Graph-bar">
+            {Array(10).fill(1).map((n, i) => {
+              return i === 9 ? <span></span> : <span>{((i+1)*scale[selected].max/10).toLocaleString()}</span>
+            })}
+          </div>
+        </div>
         {sortData.map(person => {
             return (
             <div className="Graph-border">

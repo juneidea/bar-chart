@@ -36,16 +36,26 @@ const data = [
     }
    ]
 
+const getRatio = (num) => {
+    let dec = 1
+    let rate
+    while( num/dec >= 10) {
+        dec *= 10
+        if( num/dec < 10) rate = num/dec
+    }
+    return 1/(dec/100)/rate
+}
+
 const scale = {
     age: {
         start: '0',
-        end: '100',
-        ratio: 1
+        max: 100,
+        ratio: getRatio(100)
     },
     salary: {
         start: '0',
-        end: '150,000',
-        ratio: (1/1000)/1.5
+        max: 150000,
+        ratio: getRatio(150000)
     }
 }
    
