@@ -2,37 +2,44 @@ const data = [
     {
     name: 'Adam',
     age: 20,
-    salary: 30100
+    salary: 30100,
+    color: 'green'
     },
     {
     name: 'Bob',
     age: 60,
-    salary: 102000
+    salary: 102000,
+    color: 'green'
     },
     {
     name: 'Carla',
     age: 31,
-    salary: 57000
+    salary: 57000,
+    color: 'green'
     },
     {
     name: 'Dave',
     age: 42,
-    salary: 22000
+    salary: 22000,
+    color: 'green'
     },
     {
     name: 'Ethel',
     age: 80,
-    salary: 91000
+    salary: 91000,
+    color: 'green'
     },
     {
     name: 'Frank',
     age: 28,
-    salary: 73000
+    salary: 73000,
+    color: 'green'
     },
     {
     name: 'Gina',
     age: 21,
-    salary: 16000
+    salary: 16000,
+    color: 'green'
     }
    ]
 
@@ -75,7 +82,6 @@ const inputs = [
         placeholder: "0-100",
         label: "age",
         required: true,
-        step: 1,
         warning: "need age 0-100",
         min: 0,
         max: 100,
@@ -86,7 +92,6 @@ const inputs = [
         placeholder: "0-150000",
         label: "salary",
         required: true,
-        step: 10,
         warning: "need salary 0-150,000",
         min: 0,
         max: 150000,
