@@ -1,11 +1,13 @@
 import * as React from 'react'
 
 import './App.css';
+import Form from './Form'
 import Graph from './Graph'
-import { scale } from './data'
+import { data as defaultData, scale } from './data'
 
 function App() {
   const [selected, setSelected] = React.useState('age')
+  const [data, setData] = React.useState(defaultData)
   return (
     <div className="App">
       <header className="App-base">
@@ -21,7 +23,8 @@ function App() {
           <span className="Graph-end">{(scale[selected].max).toLocaleString()}</span>
         </div>
       </div>
-        <Graph selected={selected} />
+        <Graph selected={selected} data={data} />
+        <Form data={data} setData={setData} />
       </header>
 
     </div>

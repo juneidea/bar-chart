@@ -58,5 +58,39 @@ const scale = {
         ratio: getRatio(150000)
     }
 }
+
+const inputs = [
+    {   id: 1,
+        name:"name",
+        type: "text",
+        placeholder: "your name",
+        label: "name",
+        pattern: "^[A-Za-z0-9]{3,10}$",
+        required: true,
+        warning: "need valid name 3-10 charactors",
+    },
+    {   id: 2,
+        name:"age",
+        type: "number",
+        placeholder: "0-100",
+        label: "age",
+        required: true,
+        step: 1,
+        warning: "need age 0-100",
+        min: 0,
+        max: 100,
+    },
+    {id: 3,
+        name:"salary",
+        type: "number",
+        placeholder: "0-150000",
+        label: "salary",
+        required: true,
+        step: 10,
+        warning: "need salary 0-150,000",
+        min: 0,
+        max: 150000,
+    },
+]
    
-export { data, scale }
+export { data, scale, inputs }
